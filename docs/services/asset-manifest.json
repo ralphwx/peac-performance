@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ccb3140c.css",
+    "main.js": "/static/js/main.691d481d.js",
+    "static/media/instagram.png": "/static/media/instagram.8ef86159e659165496f1.png",
+    "index.html": "/index.html",
+    "main.ccb3140c.css.map": "/static/css/main.ccb3140c.css.map",
+    "main.691d481d.js.map": "/static/js/main.691d481d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccb3140c.css",
+    "static/js/main.691d481d.js"
+  ]
+}
