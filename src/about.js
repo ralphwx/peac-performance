@@ -2,6 +2,7 @@
 import ReactDOM from "react-dom/client";
 import "./home.css";
 import {Header} from "./header.js";
+import {Footer} from "./footer.js";
 
 function Main() {
     return <div className="background">
@@ -9,9 +10,7 @@ function Main() {
         <div className="section">
             <h1 style={{textAlign: "center"}}>About</h1>
         </div>
-        <div className="footer">
-            
-        </div>
+        <Footer />
     </div>
 }
 
