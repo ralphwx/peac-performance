@@ -1,16 +1,11 @@
 
 import ReactDOM from "react-dom/client";
 import "./home.css";
+import {Header} from "./header.js";
 
 function Main() {
     return <div className="background">
-        <div className="header">
-            <div className="header logo">Peac Performance</div>
-            <div className="header menuitem">Home</div>
-            <div className="header menuitem">Services</div>
-            <div className="header menuitem">Contact</div>
-            <div className="header menuitem">About</div>
-        </div>
+        <Header />
         <div className="section">
             <h1>Home</h1>
         </div>
