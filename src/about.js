@@ -2,15 +2,16 @@
 import ReactDOM from "react-dom/client";
 import "./home.css";
 import {Header} from "./header.js";
-import {Footer} from "./footer.js";
 
 function Main() {
     return <div className="background">
         <Header />
         <div className="section">
-            <h1 style={{textAlign: "center"}}>Home</h1>
+            <h1 style={{textAlign: "center"}}>About</h1>
         </div>
-        <Footer />
+        <div className="footer">
+            
+        </div>
     </div>
 }
 

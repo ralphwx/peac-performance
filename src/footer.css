@@ -1,0 +1,14 @@
+
+.footer {
+    background-color: #111;
+    min-height: 10dvh;
+    display: flex;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-menu {
+    flex: 1;
+}
