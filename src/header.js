@@ -4,7 +4,7 @@ import "./header.css";
 //Header for wide screen
 function HeaderWide() {
     return <div className="header">
-        <div className="header-logo">Peac Performance</div>
+        <div className="header-logo">{"<logo>"}</div>
         <div className="header-menu">
             <div className="header-menuitem" onClick={() => {
                 window.location.replace("/");
@@ -76,7 +76,7 @@ function ExpandableMenu({items}) {
 //Header for medium-sized screen
 function HeaderMedium() {
     return <div className="header">
-        <div className="header-logo">Peac Performance</div>
+        <div className="header-logo">{"<logo>"}</div>
         <div style={{flex: 1}}>
             <ExpandableMenu items={<div className="menu-fullscreen">
                 <div></div>
