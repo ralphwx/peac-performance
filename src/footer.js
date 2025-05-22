@@ -1,6 +1,7 @@
 
 import "./footer.css";
 import instagramImgSrc from "./img/instagram.png";
+import {DOMAIN} from "./config.js";
 
 function Footer() {
     return <div className="footer">
@@ -16,22 +17,22 @@ function Footer() {
         <div className="footer-menu">
             <div></div>
             <div className="footer-menuitem" onClick={() => {
-                window.location.replace("/");
+                window.location.replace(DOMAIN);
             }}>
                 Home
             </div>
             <div className="footer-menuitem" onClick={() => {
-                window.location.replace("/services");
+                window.location.replace(DOMAIN + "/services");
             }}>
                 Services
             </div>
             <div className="footer-menuitem" onClick={() => {
-                window.location.replace("/contact");
+                window.location.replace(DOMAIN + "/contact");
             }}>
                 Contact
             </div>
             <div className="footer-menuitem" onClick={() => {
-                window.location.replace("/about");
+                window.location.replace(DOMAIN + "/about");
             }}>
                 About
             </div>

@@ -1,4 +1,6 @@
 import {useState, useEffect} from "react";
+import {DOMAIN} from "./config.js";
+
 import "./header.css";
 
 //Header for wide screen
@@ -7,22 +9,22 @@ function HeaderWide() {
         <div className="header-logo">{"<logo>"}</div>
         <div className="header-menu">
             <div className="header-menuitem" onClick={() => {
-                window.location.replace("/");
+                window.location.replace(DOMAIN);
             }}>
                 Home
             </div>
             <div className="header-menuitem" onClick={() => {
-                window.location.replace("/services");
+                window.location.replace(DOMAIN + "/services");
             }}>
                 Services
             </div>
             <div className="header-menuitem" onClick={() => {
-                window.location.replace("/contact");
+                window.location.replace(DOMAIN + "/contact");
             }}>
                 Contact
             </div>
             <div className="header-menuitem" onClick={() => {
-                window.location.replace("/about");
+                window.location.replace(DOMAIN + "/about");
             }}>
                 About
             </div>
@@ -81,22 +83,22 @@ function HeaderMedium() {
             <ExpandableMenu items={<div className="menu-fullscreen">
                 <div></div>
                 <div className="menuitem" onClick={() => {
-                    window.location.replace("/");
+                    window.location.replace(DOMAIN);
                 }}>
                     Home
                 </div>
                 <div className="menuitem" onClick={() => {
-                    window.location.replace("/services");
+                    window.location.replace(DOMAIN + "/services");
                 }}>
                     Services
                 </div>
                 <div className="menuitem" onClick={() => {
-                    window.location.replace("/contact");
+                    window.location.replace(DOMAIN + "/contact");
                 }}>
                     Contact
                 </div>
                 <div className="menuitem" onClick={() => {
-                    window.location.replace("/about");
+                    window.location.replace(DOMAIN + "/about");
                 }}>
                     About
                 </div>

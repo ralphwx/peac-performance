@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/peac-performance/static/css/main.ccb3140c.css",
-    "main.js": "/peac-performance/static/js/main.f6168d27.js",
-    "static/media/instagram.png": "/peac-performance/static/media/instagram.8ef86159e659165496f1.png",
-    "index.html": "/peac-performance/index.html",
-    "main.ccb3140c.css.map": "/peac-performance/static/css/main.ccb3140c.css.map",
-    "main.f6168d27.js.map": "/peac-performance/static/js/main.f6168d27.js.map"
+    "main.css": "/static/css/main.4fc55f3a.css",
+    "main.js": "/static/js/main.1c647ec8.js",
+    "static/media/instagram.png": "/static/media/instagram.8ef86159e659165496f1.png",
+    "index.html": "/index.html",
+    "main.4fc55f3a.css.map": "/static/css/main.4fc55f3a.css.map",
+    "main.1c647ec8.js.map": "/static/js/main.1c647ec8.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccb3140c.css",
-    "static/js/main.f6168d27.js"
+    "static/css/main.4fc55f3a.css",
+    "static/js/main.1c647ec8.js"
   ]
 }
