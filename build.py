@@ -35,6 +35,9 @@ new_html = original_html.replace("/static", "./static")
 with open("./build/index.html", "w") as f:
     f.write(new_html)
 
-os.system("mv ./build/static/media/* ./docs/static/media/")
+media_dir = "./docs/" + outdir
+if media_dir[-1] != "/": media_dir += "/"
+media_dir += "static/media/"
+os.system("cp ./build/static/media/* " + media_dir)
 os.system("mkdir -p ./docs/" + outdir)
 os.system("cp -r ./build/* ./docs/" + outdir)

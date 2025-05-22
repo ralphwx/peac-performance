@@ -22,3 +22,74 @@ body {
     top: 0;
     left: 0;
 }
+
+.slider-h1 {
+    font-size: 5rem;
+    color: #386cb0;
+    margin-bottom: 1.5rem;
+}
+
+.slider-h2 {
+    font-size: 3rem;
+    color: #6baed6;
+    font-style: italic;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    padding: 1rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-h1 {
+    color: #08519c;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.service-box {
+    width: 300px;
+    height: 500px;
+    border: 1px solid gray;
+    background-color: #c6dbef;
+}
+
+.service-preview-img {
+    width: 100%;
+    height: auto;
+}
+
+.service-header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.service-description {
+    margin-left: 1em;
+    font-size: 1.2rem;
+}
+
+.learn-more-button {
+    text-align: center;
+    color: white;
+    background-color: #08519c;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.learn-more-button:hover {
+    background-color: #3182bd;
+}
