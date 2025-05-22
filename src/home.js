@@ -26,7 +26,7 @@ function Main() {
     return <div className="background">
         <Header />
         <div className="section">
-            <Slider imagesWide={[roomImgSrc]} imagesNarrow={[roomCroppedImgSrc]} />
+            <Slider imagesWide={["/room.jpg"]} imagesNarrow={["/roomCropped.jpg"]} />
             <div style={{
                 position: "absolute", 
                 top: "30%", 
