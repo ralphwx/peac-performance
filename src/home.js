@@ -34,7 +34,7 @@ function Main() {
                 width: "calc(50% - 6rem)",
                 transform: "translate(-50%, -50%)",
             }}>
-                <div className="slider-h1">Peac Performance</div>
+                <div className="slider-h1">Peac Collaboration</div>
                 <div className="slider-h2">
                     Overcoming negativity through
                     evidence-based therapy
