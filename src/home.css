@@ -105,6 +105,14 @@ body {
     background-color: #3182bd;
 }
 
+.learn-more-button.purple {
+    background-color: #c6dbef;
+    color: #0808519c}
+
+.learn-more-button.purple:hover {
+    background-color: #6baed6;
+}
+
 .contact-button {
     text-align: center;
     color: white;

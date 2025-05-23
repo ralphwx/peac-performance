@@ -20,7 +20,11 @@ function Main() {
     return <div className="background">
         <Header />
         <div className="section">
-            <Slider imagesWide={["/room.png"]} imagesNarrow={["/roomCropped.png"]} />
+            <Slider 
+                imagesWide={["/room.png"]} 
+                imagesNarrow={["/roomCropped.png"]} 
+                height={"100dvh"}
+            />
             <div style={{
                 position: "absolute", 
                 top: "40%", 
@@ -34,7 +38,7 @@ function Main() {
                     evidence-based therapy
                 </div>
                 <div style={{height: "2rem"}}></div>
-                <button className="learn-more-button" style={{backgroundColor: "#edf8b1", color: "#2c7fb8"}}>Services offered</button>
+                <button className="learn-more-button purple">Services offered</button>
                 <button className="learn-more-button">About me</button>
             </div>
         </div>
