@@ -1,0 +1,14 @@
+
+.page-title {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0 3rem;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}

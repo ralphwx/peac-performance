@@ -25,14 +25,14 @@ body {
 
 .slider-h1 {
     font-size: 5rem;
-    color: #386cb0;
+    color: #08519c;
     margin-bottom: 1.5rem;
 }
 
 .slider-h2 {
     font-size: 3rem;
-    color: #6baed6;
     font-style: italic;
+    color: #386cb0;
 }
 
 .services-container {
@@ -52,6 +52,17 @@ body {
     font-weight: bold;
     text-align: center;
     padding: 1em 0;
+}
+
+.section-h2 {
+    color: #386cb0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.section-p {
+    margin: 1em 0;
+    font-size: 1.2rem;
 }
 
 .service-box {
@@ -92,4 +103,22 @@ body {
 
 .learn-more-button:hover {
     background-color: #3182bd;
+}
+
+.contact-button {
+    text-align: center;
+    color: white;
+    background-color: #9e9acb;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: #756bb1;
 }

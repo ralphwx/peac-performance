@@ -7,7 +7,7 @@ function Footer() {
     return <div className="footer">
         <div className="footer-logo">
             <div className="footer-logo-text">
-                Peac Collaboration
+                PEAC Collaboration
             </div>
             <div style={{height: "2rem"}}></div>
             <div className="socials-row">

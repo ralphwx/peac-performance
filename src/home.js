@@ -20,19 +20,22 @@ function Main() {
     return <div className="background">
         <Header />
         <div className="section">
-            <Slider imagesWide={["/room.jpg"]} imagesNarrow={["/roomCropped.jpg"]} />
+            <Slider imagesWide={["/room.png"]} imagesNarrow={["/roomCropped.png"]} />
             <div style={{
                 position: "absolute", 
-                top: "30%", 
-                left: "25%", 
-                width: "calc(50% - 6rem)",
+                top: "40%", 
+                left: "30%", 
+                width: "calc(60% - 6rem)",
                 transform: "translate(-50%, -50%)",
             }}>
-                <div className="slider-h1">Peac Collaboration</div>
+                <div className="slider-h1">PEAC Collaboration</div>
                 <div className="slider-h2">
                     Overcoming negativity through
                     evidence-based therapy
                 </div>
+                <div style={{height: "2rem"}}></div>
+                <button className="learn-more-button" style={{backgroundColor: "#edf8b1", color: "#2c7fb8"}}>Services offered</button>
+                <button className="learn-more-button">About me</button>
             </div>
         </div>
         <div className="section" style={{backgroundColor: "#b3cde3"}}>

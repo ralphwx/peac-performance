@@ -2,7 +2,7 @@
 import {useState, useEffect} from "react";
 
 const slider_threshold = 900;
-function Slider({imagesWide, imagesNarrow}) {
+function Slider({imagesWide, imagesNarrow, height}) {
     const [index, setIndex] = useState(0);
     const [display, setDisplay] = useState("wide");
     
@@ -37,7 +37,6 @@ function Slider({imagesWide, imagesNarrow}) {
             key={display + i}
         />
     });
-    const height = display === "wide" ? "100dvh" : "100dvh";
     return <div style={{position: "relative", width: "100%", height: height}}>
         {output}
     </div>

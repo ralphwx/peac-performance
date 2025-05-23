@@ -14,6 +14,11 @@ function HeaderWide() {
                 Home
             </div>
             <div className="header-menuitem" onClick={() => {
+                window.location.replace(DOMAIN + "/about");
+            }}>
+                About
+            </div>
+            <div className="header-menuitem" onClick={() => {
                 window.location.replace(DOMAIN + "/services");
             }}>
                 Services
@@ -22,11 +27,6 @@ function HeaderWide() {
                 window.location.replace(DOMAIN + "/contact");
             }}>
                 Contact
-            </div>
-            <div className="header-menuitem" onClick={() => {
-                window.location.replace(DOMAIN + "/about");
-            }}>
-                About
             </div>
         </div>
     </div>
@@ -88,6 +88,11 @@ function HeaderMedium() {
                     Home
                 </div>
                 <div className="menuitem" onClick={() => {
+                    window.location.replace(DOMAIN + "/about");
+                }}>
+                    About
+                </div>
+                <div className="menuitem" onClick={() => {
                     window.location.replace(DOMAIN + "/services");
                 }}>
                     Services
@@ -96,11 +101,6 @@ function HeaderMedium() {
                     window.location.replace(DOMAIN + "/contact");
                 }}>
                     Contact
-                </div>
-                <div className="menuitem" onClick={() => {
-                    window.location.replace(DOMAIN + "/about");
-                }}>
-                    About
                 </div>
                 <div></div>
             </div>}/>

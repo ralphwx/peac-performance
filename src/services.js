@@ -9,7 +9,20 @@ function Main() {
     return <div className="background">
         <Header />
         <div className="section">
-            <Slider imagesWide={["/couch.jpg"]} imagesNarrow={["/couchCropped.jpg"]} />
+            <Slider 
+                imagesWide={["/couch.png"]} 
+                imagesNarrow={["/couchCropped.jpg"]} 
+                height={"50dvh"}
+            />
+            <div className="slider-h1" style={{
+                position: "absolute", 
+                left: "50%",
+                top: "50%",
+                transform: "translate(-50%, -50%)",
+                color: "#08519c",
+            }}>
+                Services
+            </div>
         </div>
         <Footer />
     </div>
