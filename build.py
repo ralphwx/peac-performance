@@ -38,7 +38,7 @@ with open("./build/index.html", "w") as f:
 #media_dir = "./docs/" + outdir
 #if media_dir[-1] != "/": media_dir += "/"
 #media_dir += "static/media/"
-media_dir = "./docs/static/media"
-os.system("cp ./build/static/media/* " + media_dir)
+#media_dir = "./docs/static/media"
+#os.system("cp ./build/static/media/* " + media_dir)
 os.system("mkdir -p ./docs/" + outdir)
 os.system("cp -r ./build/* ./docs/" + outdir)
