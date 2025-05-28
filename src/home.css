@@ -14,7 +14,7 @@ body {
     justify-content: center;
     background-size: cover;
     background-position: center;
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .slider.home {

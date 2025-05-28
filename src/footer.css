@@ -4,26 +4,37 @@
     min-height: 10dvh;
     display: flex;
     padding: 2rem;
+    align-items: center;
 }
 
 .footer-logo {
-    flex: 1;
-}
-
-.footer-logo-text {
-    color: #b3cde3;
-    font-size: 3.5rem;
+    flex: 2;
 }
 
 .socials-row {
     height: 40px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+@media(max-width: 960px) {
+    .socials-row {
+        margin-left: 0;
+    }
+}
+
+.contact-icon-img {
+    width: auto;
+    height: 75%;
+    margin: 10px;
 }
 
 .social-icon-img {
     width: auto;
     height: 100%;
+    margin: 10px;
 }
 
 .footer-menu {
