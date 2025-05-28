@@ -121,6 +121,7 @@ body {
     font-weight: bold;
     font-size: clamp(0.8rem, 2.6vw, 1.3rem);
     margin: 0.75em;
+    transition: background-color 0.25s ease-in-out;
 }
 
 .learn-more-button:hover {
