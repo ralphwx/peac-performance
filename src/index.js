@@ -1,1 +1,1 @@
-import "./about.js";
+import "./home.js";

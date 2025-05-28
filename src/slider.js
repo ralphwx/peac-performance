@@ -2,7 +2,7 @@
 import {useState, useEffect} from "react";
 
 const slider_threshold = 900;
-function Slider({imagesWide, imagesNarrow, height}) {
+function Slider({imagesWide, imagesNarrow, height, innerContent}) {
     const [index, setIndex] = useState(0);
     const [display, setDisplay] = useState("wide");
     
@@ -30,12 +30,11 @@ function Slider({imagesWide, imagesNarrow, height}) {
     const imagesDisplayed = display === "wide" ? imagesWide : imagesNarrow;
     const output = imagesDisplayed.map((e, i) => {
         const opacity = i === index ? 1 : 0;
-        return <img 
+        return <div 
             className="slider-img" 
-            src={e} 
-            style={{opacity: opacity}} 
+            style={{backgroundImage: "url(" + e + ")", opacity: opacity}} 
             key={display + i}
-        />
+        ></div>
     });
     return <div style={{position: "relative", width: "100%", height: height}}>
         {output}

@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./home.css";
 import {Header} from "./header.js";
 import {Footer} from "./footer.js";
-import {Slider} from "./slider.js";
 
 function ServiceBox({service, img, description}) {
     return <div className="service-box">
@@ -19,30 +18,22 @@ function ServiceBox({service, img, description}) {
 function Main() {
     return <div className="background">
         <Header />
-        <div className="section">
-            <Slider 
-                imagesWide={["/room.png"]} 
-                imagesNarrow={["/roomCropped.png"]} 
-                height={"100dvh"}
-            />
-            <div style={{
-                position: "absolute", 
-                top: "40%", 
-                left: "30%", 
-                width: "calc(60% - 6rem)",
-                transform: "translate(-50%, -50%)",
-            }}>
-                <div className="slider-h1">PEAC Collaboration</div>
-                <div className="slider-h2">
-                    Overcoming negativity through
-                    evidence-based therapy
+        <div className="slider home">
+            <div>
+                <div className="slider-h1 left">
+                    PEAC Collaboration
+                </div>
+                <div className="slider-h2 left">
+                    Your Pathway to Empowerment And Connection
                 </div>
                 <div style={{height: "2rem"}}></div>
-                <button className="learn-more-button purple">Services offered</button>
+                <button className="learn-more-button purple">
+                    Services offered
+                </button>
                 <button className="learn-more-button">About me</button>
             </div>
         </div>
-        <div className="section" style={{backgroundColor: "#b3cde3"}}>
+        <div className="section" style={{backgroundColor: "#b3cde3", display: "none"}}>
             <div className="section-h1">Services</div>
             <div className="services-container">
                 <ServiceBox service={"Individual Therapy"} img={"/individual.jpg"} description={"I offer individual therapy ..."} />

@@ -1,16 +1,32 @@
 .header {
-    padding-top: 2rem;
     display: flex;
     padding-left: 4rem;
     align-items: center;
     position: relative;
     background-color: #b3cde3;
-    padding-bottom: 1.5rem;
 }
 
 .header-logo {
-    font-size: 3.5rem;
     flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.logo-title {
+    font-size: 3rem;
+    font-family: Adriane;
+    color: #a97e76;
+}
+
+.logo-subtitle {
+    font-size: 1.5rem;
+    color: #a97e76;
+}
+
+.logo-img {
+    height: clamp(2rem, 16vw, 7rem);
+    width: auto;
+    margin: 1rem;
 }
 
 .header-menuitem {

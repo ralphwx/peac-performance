@@ -6,7 +6,15 @@ import "./header.css";
 //Header for wide screen
 function HeaderWide() {
     return <div className="header">
-        <div className="header-logo">{"<logo>"}</div>
+        <div className="header-logo">
+            <img src="/logo.png" className="logo-img" />
+            <div>
+                <div className="logo-title">PEAC Collaboration</div>
+                <div className="logo-subtitle">
+                    Therapy and Consulting Services
+                </div>
+            </div>
+        </div>
         <div className="header-menu">
             <div className="header-menuitem" onClick={() => {
                 window.location.replace(DOMAIN);
@@ -78,7 +86,15 @@ function ExpandableMenu({items}) {
 //Header for medium-sized screen
 function HeaderMedium() {
     return <div className="header">
-        <div className="header-logo">{"<logo>"}</div>
+        <div className="header-logo">
+            <img src="/logo.png" className="logo-img" />
+            <div>
+                <div className="logo-title">PEAC Collaboration</div>
+                <div className="logo-subtitle">
+                    Therapy and Consulting Services
+                </div>
+            </div>
+        </div>
         <div style={{flex: 1}}>
             <ExpandableMenu items={<div className="menu-fullscreen">
                 <div></div>
@@ -108,13 +124,50 @@ function HeaderMedium() {
     </div>
 }
 
-const threshold = 1170;
+function HeaderNarrow() {
+    return <div className="header">
+        <div className="header-logo">
+            <img src="/logo.png" className="logo-img" />
+        </div>
+        <div style={{flex: 1}}>
+            <ExpandableMenu items={<div className="menu-fullscreen">
+                <div></div>
+                <div className="menuitem" onClick={() => {
+                    window.location.replace(DOMAIN);
+                }}>
+                    Home
+                </div>
+                <div className="menuitem" onClick={() => {
+                    window.location.replace(DOMAIN + "/about");
+                }}>
+                    About
+                </div>
+                <div className="menuitem" onClick={() => {
+                    window.location.replace(DOMAIN + "/services");
+                }}>
+                    Services
+                </div>
+                <div className="menuitem" onClick={() => {
+                    window.location.replace(DOMAIN + "/contact");
+                }}>
+                    Contact
+                </div>
+                <div></div>
+            </div>}/>
+        </div>
+    </div>
+}
+
+const threshold_wide = 1440;
+const threshold_narrow = 960;
 function Header() {
     const [displayState, setDisplayState] = useState("wide");
 
     let updateState = () => {
-        if(window.innerWidth > threshold) {
+        if(window.innerWidth > threshold_wide) {
             setDisplayState("wide");
+        } else if(window.innerWidth < threshold_narrow) {
+            setDisplayState("narrow");
         } else {
             setDisplayState("medium");
         }
@@ -131,8 +184,10 @@ function Header() {
 
     if(displayState === "wide") {
         return <HeaderWide />
-    } else {
+    } else if(displayState === "medium") {
         return <HeaderMedium />
+    } else {
+        return <HeaderNarrow />
     }
 }
 
