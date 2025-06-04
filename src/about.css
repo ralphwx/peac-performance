@@ -6,26 +6,8 @@
 
 .about-me {
     display: flex;
-    flex-direction: column;
     margin: 0 3rem;
     justify-content: center;
     align-items: center;
 }
 
-.section {
-    padding: 3rem max(10%, 3rem);
-}
-
-.section:nth-child(even) {
-    background-color: #eff3ff;
-}
-
-.section:nth-child(odd) {
-    background-color: #b3cde3;
-}
-
-.section:nth-child(odd) > .section-h1 {
-    color: #756bb1;
-    padding-bottom: 2rem;
-    text-align: left;
-}

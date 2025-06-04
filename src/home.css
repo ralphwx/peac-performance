@@ -57,58 +57,6 @@ body {
     min-width: min(calc(100% - 2rem), 400px);
     padding: 1rem;
 }
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 200px;
-    padding: 1rem;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section-h1 {
-    color: #08519c;
-    font-size: 3.5rem;
-    font-weight: bold;
-    padding: 1em 0;
-}
-
-.section-h2 {
-    color: #386cb0;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-.section-p {
-    margin: 1em 0;
-    font-size: 1.2rem;
-}
-
-.service-box {
-    width: 300px;
-    height: 500px;
-    border: 1px solid gray;
-    background-color: #c6dbef;
-}
-
-.service-preview-img {
-    width: 100%;
-    height: auto;
-}
-
-.service-header {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.service-description {
-    margin-left: 1em;
-    font-size: 1.2rem;
-}
 
 .learn-more-button {
     text-align: center;

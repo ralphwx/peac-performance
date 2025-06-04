@@ -1,0 +1,71 @@
+
+@property --odd-background-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #b3cde3;
+}
+
+@property --even-background-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #eff3ff;
+}
+
+@property --h1-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #08519c;
+}
+
+@property --h2-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #386cb0;
+}
+
+body {
+    font-family: Lora, serif;
+    margin: 0;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: max(10%, 3rem);
+    padding-right: max(10%, 3rem);
+}
+
+.section-h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 4rem);
+    color: var(--h1-color);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.section-h2 {
+    font-size: clamp(1.5rem, 4vw + 0.5rem, 3rem);
+    color: var(--h2-color);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.section-h3 {
+    font-size: clamp(1.25rem, 3vw + 0.25rem, 2.25rem);
+}
+
+.section:nth-child(even) {
+    background-color: var(--even-background-color);
+    --h1-color: #bcbddc;
+    --h2-color: #bcbddc;
+}
+
+.section:nth-child(odd) {
+    background-color: var(--odd-background-color);
+    --h1-color: #9ecae1;
+    --h2-color: #9ecae1;
+}

@@ -1,15 +1,20 @@
 
 import ReactDOM from "react-dom/client";
-import "./home.css";
+import "./template.css";
 import "./about.css";
 import {Header} from "./header.js";
 import {Footer} from "./footer.js";
 
 function Main() {
-    return <div className="background">
+    return <div>
         <Header />
         <div className="section">
             <div className="about-me">
+                <img src="/lucinda-about.png" style={{
+                    flex: 1, 
+                    minWidth: "300px", 
+                    aspectRatio: "auto"
+                }}/>
                 <div style={{
                     flex: 2, 
                     marginBottom: "3rem", 
@@ -25,18 +30,13 @@ function Main() {
                         黄瑶冲. 
                     </div>
                 </div>
-                <img src="/lucinda-about.png" style={{
-                    flex: 1, 
-                    minWidth: "300px", 
-                    aspectRatio: "auto"
-                }}/>
             </div>
         </div>
         <div className="section">
             <div className="section-h1">
                 Who am I?
             </div>
-            <div className="section-p">
+            <p>
                 I was born and raised in Yiwu, China, and my journey has 
                 taken me across continents, shaping my understanding of 
                 people and relationships along the way. Now pursuing a 
@@ -44,29 +44,25 @@ function Main() {
                 parent-adult child relationships and intergenerational 
                 solidarity, driven by a deep appreciation for the 
                 complexities of family dynamics.
-            </div>
-            <div className="section-p">
+            </p>
+            <p>
                 Outside of my professional life, I love spending time with 
                 my husband, playing with my cats, reading novels, playing 
                 tennis, and, of course, going down YouTube rabbit holes. I 
                 believe in balance—embracing curiosity, creativity, and 
                 lifelong learning in everything I do.
-            </div>
-            <div className="section-h1" style={{
-                color: "#756bb1", 
-                paddingBottom: "2rem",
-                textAlign: "left",
-            }}>
+            </p>
+            <div className="section-h1">
                 Therapeutic Approach
             </div>
-            <div className="section-p">
+            <p>
                 I believe that every individual, couple, and family exist 
                 within a unique system, shaped by culture and personal 
                 experiences. My approach is grounded in understanding these 
                 complexities while fostering meaningful growth through 
                 mindful and intentional interactions. 
-            </div>
-            <div className="section-p">
+            </p>
+            <p>
                 Through a collaborative process, I help clients navigate 
                 interpersonal challenges, strengthen communication, and 
                 deepen connections. Whether working with families, couples, 
@@ -77,47 +73,47 @@ function Main() {
                 also incorporate cognitive-behavioral therapy (CBT), 
                 solution-focused therapy, internal family systems model 
                 (IFS), and integrative behavioral couple therapy (IBCT).
-            </div>
+            </p>
             <div style={{height: "3rem"}}></div>
         </div>
         <div className="section">
             <div className="section-h1">Licenses and Trainings</div>
             <ul>
-                <li><div className="section-p">
+                <li><p>
                     Michigan Licensed Marriage and Family Therapist
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     ICEEFT-endorsed Emotionally Focused Therapy (EFT) 
                     Training I & II
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     MI Parenting Resource - Online Parenting Program
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     Skills for Psychological Recovery (SPR) Online
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     Advocacy Academy Online Training
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     Grief Counseling Certification
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     Trauma Focused Cognitive Behavioral Therapy Course
-                </div></li>
+                </p></li>
             </ul>
             <div className="section-h1">Affiliation, Memberships, and Honors</div>
             <ul>
-                <li><div className="section-p">
+                <li><p>
                     American Association for Marriage and Family Therapy
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     FAHS Minority Fellowship 2024-2025
-                </div></li>
-                <li><div className="section-p">
+                </p></li>
+                <li><p>
                     Scholarship of Undergraduate Teaching and Learning 
                     Fellowship
-                </div></li>
+                </p></li>
             </ul>
         </div>
         <Footer />
