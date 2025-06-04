@@ -117,7 +117,19 @@ function Main() {
             <div style={{backgroundColor: "#c6dbef", padding: "min(10%, 3rem)"}}>
                 <AboutHome />
             </div>
+            <div style={{
+                display: "flex", 
+                flexDirection: "column", 
+                alignItems: "center",
+                gap: "2rem",
+            }}>
+                <div></div>
+                <img src="/lgbtq-affirming.png" />
+                <img src="/verified.png" />
+                <div></div>
+            </div>
         </div>
+
         <Footer />
     </div>
 }
