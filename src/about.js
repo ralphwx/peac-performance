@@ -4,33 +4,86 @@ import "./template.css";
 import "./about.css";
 import {Header} from "./header.js";
 import {Footer} from "./footer.js";
+import {useState, useEffect} from "react";
+
+function AboutIntroWide() {
+    return <div className="about-me">
+        <img src="/lucinda-about.png" style={{
+            flex: 1, 
+            minWidth: "300px", 
+            aspectRatio: "auto"
+        }}/>
+        <div style={{
+            flex: 2, 
+            marginBottom: "3rem", 
+            minWidth: "500px",
+            marginLeft: "3rem",
+        }}>
+            <div className="section-h1" style={{paddingBottom: 0}}>
+                Lucinda Huang, MS, LMFT
+            </div>
+            <div className="section-h2">
+                Founder and Owner of PEAC Collaboration LLC
+            </div>
+            <div className="section-h3">
+                Welcome! I am happy you are here.
+            </div>
+        </div>
+    </div>
+}
+
+function AboutIntroNarrow() {
+    return <div style={{
+        display: "flex",
+        flexDirection: "column",
+    }}>
+        <div className="section-h1">Lucinda Huang, MS, LMFT</div>
+        <div className="section-h2">
+            Founder and Owner of PEAC Collaboration LLC
+        </div>
+        <div className="section-h3">
+            Welcome! I am happy you are here.
+        </div>
+        <div style={{height: "3rem"}}></div>
+        <img src="/lucinda-about.png" style={{
+            aspectRatio: "auto"
+        }}/>
+    </div>
+}
+
+let about_threshold = 800;
+function AboutIntroSection() {
+    const [displayState, setDisplayState] = useState("wide");
+
+    let updateState = () => {
+        if(window.innerWidth > about_threshold) {
+            setDisplayState("wide");
+        } else {
+            setDisplayState("narrow");
+        }
+    }
+
+    useEffect(() => {
+        updateState();
+        window.addEventListener("resize", updateState);
+
+        return () => {
+            window.removeEventListener("resize", updateState);
+        }
+    }, []);
+
+    if(displayState === "wide") {
+        return <AboutIntroWide />
+    } else {
+        return <AboutIntroNarrow />
+    }
+}
 
 function Main() {
     return <div>
         <Header />
         <div className="section">
-            <div className="about-me">
-                <img src="/lucinda-about.png" style={{
-                    flex: 1, 
-                    minWidth: "300px", 
-                    aspectRatio: "auto"
-                }}/>
-                <div style={{
-                    flex: 2, 
-                    marginBottom: "3rem", 
-                    minWidth: "500px",
-                    marginLeft: "3rem",
-                }}>
-                    <div className="section-h1" style={{paddingBottom: 0}}>
-                        Lucinda Huang, MS, LMFT
-                    </div>
-                    <div className="section-h2">Therapist</div>
-                    <div className="section-p">
-                        Welcome! I am Lucinda Huang and my Chinese name is 
-                        黄瑶冲. 
-                    </div>
-                </div>
-            </div>
+            <AboutIntroSection />
         </div>
         <div className="section">
             <div className="section-h1">

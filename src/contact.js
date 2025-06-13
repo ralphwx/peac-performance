@@ -1,14 +1,19 @@
 
 import ReactDOM from "react-dom/client";
 import "./home.css";
+import "./template.css";
 import {Header} from "./header.js";
 import {Footer} from "./footer.js";
 
 function Main() {
     return <div className="background">
         <Header />
-        <div className="section">
-            <h1 style={{textAlign: "center"}}>Contact</h1>
+        <div className="slider home">
+            <div>
+                <div className="slider-h1">
+                    Contact
+                </div>
+            </div>
         </div>
         <Footer />
     </div>

@@ -13,6 +13,11 @@ function FooterMenu() {
             Home
         </div>
         <div className="footer-menuitem" onClick={() => {
+            window.location.replace(DOMAIN + "/about");
+        }}>
+            About
+        </div>
+        <div className="footer-menuitem" onClick={() => {
             window.location.replace(DOMAIN + "/services");
         }}>
             Services
@@ -21,11 +26,6 @@ function FooterMenu() {
             window.location.replace(DOMAIN + "/contact");
         }}>
             Contact
-        </div>
-        <div className="footer-menuitem" onClick={() => {
-            window.location.replace(DOMAIN + "/about");
-        }}>
-            About
         </div>
     </div>
 }
@@ -38,16 +38,11 @@ function FooterMedium() {
                 <div>
                 </div>
             </div>
-            <div className="socials-row" style={{color: "white"}}>
-                <img src="/phone.png" className="contact-icon-img" />
-                <p>PHONE NUMBER HERE</p>
-            </div>
-            <div className="socials-row" style={{color: "white"}}>
-                <img src="/mail.png" className="contact-icon-img" />
-                <p>EMAIL HERE</p>
+            <div className="socials-row">
+                <p className="footer-info">Phone: 248-781-0432</p>
             </div>
             <div className="socials-row">
-                <img src={instagramImgSrc} className="social-icon-img" />
+                <p className="footer-info">Email: rw474@cornell.edu</p>
             </div>
         </div>
         <FooterMenu />
@@ -58,25 +53,28 @@ function FooterMedium() {
 function FooterWide() {
     return <div className="footer">
         <div className="footer-logo">
-            <div style={{display: "flex", alignItems: "center"}}>
+            <div style={{display: "flex"}}>
                 <img src="/logo.png" className="logo-img" />
                 <div>
-                    <div className="logo-title">PEAC Collaboration</div>
-                    <div className="logo-subtitle">
-                        Therapy and Consulting Services
+                    <div style={{
+                        height: "clamp(2rem, 16vw, 7rem)", 
+                        marginTop: "1rem",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                    }}>
+                        <div className="logo-title">PEAC Collaboration</div>
+                        <div className="logo-subtitle">
+                            Therapy and Consulting Services
+                        </div>
+                    </div>
+                    <div className="socials-row">
+                        <p className="footer-info">Phone: 248-781-0432</p>
+                    </div>
+                    <div className="socials-row">
+                        <p className="footer-info">Email: rw474@cornell.edu</p>
                     </div>
                 </div>
-            </div>
-            <div className="socials-row" style={{color: "white"}}>
-                <img src="/phone.png" className="contact-icon-img" />
-                <p>PHONE NUMBER HERE</p>
-            </div>
-            <div className="socials-row" style={{color: "white"}}>
-                <img src="/mail.png" className="contact-icon-img" />
-                <p>EMAIL HERE</p>
-            </div>
-            <div className="socials-row">
-                <img src={instagramImgSrc} className="social-icon-img" />
             </div>
         </div>
         <FooterMenu />

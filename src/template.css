@@ -1,26 +1,33 @@
 
+@font-face {
+    font-family: "Josefin sans";
+    src:
+        local("Josefin sans"),
+        url("./fonts/josefin-sans.ttf") format("truetype");
+}
+
 @property --odd-background-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #b3cde3;
+    initial-value: #faf9f6;
 }
 
 @property --even-background-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #eff3ff;
+    initial-value: #c8c8c0;
 }
 
 @property --h1-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #08519c;
+    initial-value: #083584;
 }
 
 @property --h2-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: #386cb0;
+    initial-value: #083584;
 }
 
 body {
@@ -30,6 +37,7 @@ body {
 
 p {
     font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #083584;
 }
 
 .section {
@@ -68,4 +76,9 @@ p {
     background-color: var(--odd-background-color);
     --h1-color: #9ecae1;
     --h2-color: #9ecae1;
+}
+
+.subsection {
+    background-color: #c6dbef;
+    padding: min(10%, 3rem);
 }

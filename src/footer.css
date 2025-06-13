@@ -1,9 +1,9 @@
 
 .footer {
-    background-color: #111;
+    background-color: #deebf7;
     min-height: 10dvh;
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
 }
 
@@ -12,11 +12,16 @@
 }
 
 .socials-row {
-    height: 40px;
+    height: 1.1rem;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 10%;
+    margin-left: 0%;
+}
+
+.footer-info {
+    font-size: 1.2rem;
+    color: #a97e76;
 }
 
 @media(max-width: 960px) {
@@ -42,12 +47,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.8rem;
 }
 
 .footer-menuitem {
-    color: white;
-    font-size: 1.5rem;
+    color: #a97e76;
+    font-size: 1.4rem;
 }
 
 .footer-menuitem:hover {

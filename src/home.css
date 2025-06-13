@@ -50,6 +50,7 @@ body {
 .slider-h2 {
     font-size: clamp(1.2rem, 6vw, 3rem);
     color: #386cb0;
+    font-family: Josefin sans;
 }
 
 .slider-h2.left {
@@ -77,7 +78,8 @@ body {
 
 .learn-more-button.purple {
     background-color: #c6dbef;
-    color: #0808519c}
+    color: #0808519c
+}
 
 .learn-more-button.purple:hover {
     background-color: #6baed6;
@@ -99,4 +101,9 @@ body {
 
 .contact-button:hover {
     background-color: #756bb1;
+}
+
+.tag-img {
+    height: 3rem;
+    width: auto;
 }

@@ -34,14 +34,11 @@ function AboutBlurb() {
 
 function NameBlurb() {
     return <div>
-        <div className="section-h1">
+        <div className="section-h1" style={{fontSize: "2rem"}}>
             Lucinda Huang, MS, LMFT
         </div>
-        <div className="section-h2">
+        <div className="section-h2" style={{fontSize: "1.5rem"}}>
             Founder and Owner of PEAC Collaboration LLC
-        </div>
-        <div className="section-h2">
-            Welcome! I am happy you are here.
         </div>
     </div>
 }
@@ -71,7 +68,7 @@ function AboutHome() {
            display: "flex", 
            justifyContent: "center", 
            gap: "4rem",
-           alignItems: "flex-start"
+           alignItems: "center"
        }}>
            <div style={{flex: 1, display: "flex", justifyContent: "center", maxWidth: "400px"}}>
                <img 
@@ -82,7 +79,6 @@ function AboutHome() {
            <div style={{flex: 1, display: "flex", flexDirection: "column", alignItems: "center", maxWidth: "600px"}}>
                <NameBlurb />
                <AboutBlurb />
-               <div className="learn-more-button purple">Read More</div>
            </div>
        </div>
     } else {
@@ -93,10 +89,8 @@ function AboutHome() {
                 style={{width: "100%", height: "auto"}}
             />
             <AboutBlurb />
-            <div className="learn-more-button purple">Read More</div>
         </div>
     }
-    
 }
 
 function Main() {
@@ -104,17 +98,17 @@ function Main() {
         <Header />
         <div className="slider home">
             <div>
-                <div className="slider-h1 left">
+                <div className="slider-h1 left" style={{display: "none"}}>
                     PEAC Collaboration
                 </div>
                 <div className="slider-h2 left">
-                    Your Pathway to Empowerment And Connection
+                    Your Pathway to Empowerment and Connection
                 </div>
                 <div style={{height: "2rem"}}></div>
             </div>
         </div>
-        <div style={{backgroundColor: "#b3cde3", padding: "min(10%, 4rem)"}}>
-            <div style={{backgroundColor: "#c6dbef", padding: "min(10%, 3rem)"}}>
+        <div className="section">
+            <div className="subsection">
                 <AboutHome />
             </div>
             <div style={{
@@ -124,12 +118,16 @@ function Main() {
                 gap: "2rem",
             }}>
                 <div></div>
-                <img src="/lgbtq-affirming.png" />
-                <img src="/verified.png" />
+                <img className="tag-img" src="/lgbtq-affirming.png" />
+                <a href="https://www.psychologytoday.com/us/therapists/lucinda-huang-okemos-mi/1290285">
+                    <img className="tag-img" src="/verified.png" />
+                </a>
+                <a href="https://www.instagram.com/peacmentalhealth/">
+                    <img className="tag-img" src="/instagram.png" />
+                </a>
                 <div></div>
             </div>
         </div>
-
         <Footer />
     </div>
 }
