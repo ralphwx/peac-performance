@@ -95,8 +95,10 @@ function AboutHome() {
 
 function Main() {
     return <div>
-        <Header />
-        <div className="slider home">
+        <div className="section">
+            <Header />
+        </div>
+        <div className="section slider home">
             <div>
                 <div className="slider-h1 left" style={{display: "none"}}>
                     PEAC Collaboration
@@ -107,7 +109,7 @@ function Main() {
                 <div style={{height: "2rem"}}></div>
             </div>
         </div>
-        <div className="section">
+        <div className="section section-content">
             <div className="subsection">
                 <AboutHome />
             </div>
@@ -128,7 +130,9 @@ function Main() {
                 <div></div>
             </div>
         </div>
-        <Footer />
+        <div className="section">
+            <Footer />
+        </div>
     </div>
 }
 

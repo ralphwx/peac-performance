@@ -4,16 +4,11 @@ import {DOMAIN} from "./config.js";
 import "./header.css";
 
 
-const logo_img_style = {
-    width: "9%",
-    height: "auto",
-}
-
 //Header for wide screen
 function HeaderWide() {
     return <div className="header">
         <div className="header-logo">
-            <img src="/logo.png" className="logo-img" style={logo_img_style}/>
+            <img src="/logo.png" className="logo-img" />
             <div>
                 <div className="logo-title">PEAC Collaboration</div>
                 <div className="logo-subtitle">
@@ -93,7 +88,7 @@ function ExpandableMenu({items}) {
 function HeaderMedium() {
     return <div className="header">
         <div className="header-logo">
-            <img src="/logo.png" className="logo-img" style={logo_img_style}/>
+            <img src="/logo.png" className="logo-img" />
             <div>
                 <div className="logo-title">PEAC Collaboration</div>
                 <div className="logo-subtitle">
@@ -164,8 +159,8 @@ function HeaderNarrow() {
     </div>
 }
 
-const threshold_wide = 960;
-const threshold_narrow = 700;
+const threshold_wide = 1170;
+const threshold_narrow = 750;
 function Header() {
     const [displayState, setDisplayState] = useState("wide");
 

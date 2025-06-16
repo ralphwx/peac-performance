@@ -81,11 +81,13 @@ function AboutIntroSection() {
 
 function Main() {
     return <div>
-        <Header />
         <div className="section">
+            <Header />
+        </div>
+        <div className="section section-content">
             <AboutIntroSection />
         </div>
-        <div className="section">
+        <div className="section section-content">
             <div className="section-h1">
                 Who am I?
             </div>
@@ -129,7 +131,7 @@ function Main() {
             </p>
             <div style={{height: "3rem"}}></div>
         </div>
-        <div className="section">
+        <div className="section section-content">
             <div className="section-h1">Licenses and Trainings</div>
             <ul>
                 <li><p>
@@ -169,7 +171,9 @@ function Main() {
                 </p></li>
             </ul>
         </div>
-        <Footer />
+        <div className="section">
+            <Footer />
+        </div>
     </div>
 }
 
