@@ -22,11 +22,8 @@ function AboutIntroWide() {
             <div className="section-h1" style={{paddingBottom: 0}}>
                 Lucinda Huang, MS, LMFT
             </div>
-            <div className="section-h2">
-                Founder and Owner of PEAC Collaboration LLC
-            </div>
             <div className="section-h3">
-                Welcome! I am happy you are here.
+                Welcome! I am happy you are here!
             </div>
         </div>
     </div>
@@ -38,13 +35,10 @@ function AboutIntroNarrow() {
         flexDirection: "column",
     }}>
         <div className="section-h1">Lucinda Huang, MS, LMFT</div>
-        <div className="section-h2">
-            Founder and Owner of PEAC Collaboration LLC
-        </div>
         <div className="section-h3">
-            Welcome! I am happy you are here.
+            Welcome! I am happy you are here!
         </div>
-        <div style={{height: "3rem"}}></div>
+        <div style={{height: "2rem"}}></div>
         <img src="/lucinda-about.png" style={{
             aspectRatio: "auto"
         }}/>
@@ -129,7 +123,6 @@ function Main() {
                 solution-focused therapy, internal family systems model 
                 (IFS), and integrative behavioral couple therapy (IBCT).
             </p>
-            <div style={{height: "3rem"}}></div>
         </div>
         <div className="section section-content">
             <div className="section-h1">Licenses and Trainings</div>
@@ -157,7 +150,8 @@ function Main() {
                     Trauma Focused Cognitive Behavioral Therapy Course
                 </p></li>
             </ul>
-            <div className="section-h1">Affiliation, Memberships, and Honors</div>
+            <div style={{height: "1rem"}}></div>
+            <div className="section-h1">Affiliations, Memberships, and Honors</div>
             <ul>
                 <li><p>
                     American Association for Marriage and Family Therapy
@@ -171,9 +165,7 @@ function Main() {
                 </p></li>
             </ul>
         </div>
-        <div className="section">
-            <Footer />
-        </div>
+        <Footer />
     </div>
 }
 

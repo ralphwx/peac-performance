@@ -1,0 +1,7 @@
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2.4rem, 6.4vw, 3.2rem);
+    color: var(--h1-color);
+    font-weight: bold;
+}

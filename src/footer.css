@@ -4,6 +4,7 @@
     display: flex;
     padding: 1rem;
     align-items: center;
+    background-color: #3b719f;
 }
 
 .footer-logo {
@@ -20,7 +21,7 @@
 
 .footer-info {
     font-size: 1.2rem;
-    color: #a97e76;
+    color: #faf9f6;
 }
 
 @media(max-width: 960px) {
@@ -50,7 +51,7 @@
 }
 
 .footer-menuitem {
-    color: #a97e76;
+    color: #faf9f6;
     font-size: 1.4rem;
 }
 

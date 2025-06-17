@@ -1,0 +1,30 @@
+
+.slider.home {
+    background-image: url("../public/homePlants.jpg");
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: top;
+    min-height: calc(90dvh - 6.3rem);
+    align-items: center;
+}
+
+.slider-h1 {
+    font-size: clamp(1.2rem, 6.4vw, 3.2rem);
+    color: #08519c;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.slider-h2 {
+    font-size: clamp(0.6rem, 3vw, 1.5rem);
+    color: #08519c;
+    padding: 0 1rem;
+    text-align: center;
+}

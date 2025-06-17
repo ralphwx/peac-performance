@@ -42,7 +42,9 @@ function FooterMedium() {
                 <p className="footer-info">Phone: 248-781-0432</p>
             </div>
             <div className="socials-row">
-                <p className="footer-info">Email: rw474@cornell.edu</p>
+                <p className="footer-info">
+		    Email: peaccollaborationllc@gmail.com
+                </p>
             </div>
         </div>
         <FooterMenu />
@@ -58,13 +60,14 @@ function FooterWide() {
                 <div>
                     <div style={{
                         height: "clamp(2rem, 16vw, 7rem)", 
-                        marginTop: "1rem",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
                     }}>
-                        <div className="logo-title">PEAC Collaboration</div>
-                        <div className="logo-subtitle">
+                        <div className="logo-title" style={{color: "#faf9f6"}}>
+                            PEAC Collaboration
+                        </div>
+                        <div className="logo-subtitle" style={{color: "#faf9f6"}}>
                             Therapy and Consulting Services
                         </div>
                     </div>
@@ -72,7 +75,9 @@ function FooterWide() {
                         <p className="footer-info">Phone: 248-781-0432</p>
                     </div>
                     <div className="socials-row">
-                        <p className="footer-info">Email: rw474@cornell.edu</p>
+                        <p className="footer-info">
+		            Email: peaccollaborationllc@gmail.com
+	                </p>
                     </div>
                 </div>
             </div>

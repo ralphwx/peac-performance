@@ -34,10 +34,10 @@ function AboutBlurb() {
 
 function NameBlurb() {
     return <div>
-        <div className="section-h1" style={{fontSize: "2rem"}}>
+        <div className="section-h1">
             Lucinda Huang, MS, LMFT
         </div>
-        <div className="section-h2" style={{fontSize: "1.5rem"}}>
+        <div className="section-h2">
             Founder and Owner of PEAC Collaboration LLC
         </div>
     </div>
@@ -99,18 +99,13 @@ function Main() {
             <Header />
         </div>
         <div className="section slider home">
-            <div>
-                <div className="slider-h1 left" style={{display: "none"}}>
-                    PEAC Collaboration
-                </div>
-                <div className="slider-h2 left">
-                    Your Pathway to Empowerment and Connection
-                </div>
-                <div style={{height: "2rem"}}></div>
+            <div style={{flex: 1}}></div>
+            <div className="slider-h2 left" style={{flex: 2}}>
+                Your Pathway to Empowerment and Connection
             </div>
         </div>
         <div className="section section-content">
-            <div className="subsection">
+            <div className="subsection" style={{paddingTop: "1.5rem"}}>
                 <AboutHome />
             </div>
             <div style={{
@@ -130,9 +125,7 @@ function Main() {
                 <div></div>
             </div>
         </div>
-        <div className="section">
-            <Footer />
-        </div>
+        <Footer />
     </div>
 }
 

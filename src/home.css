@@ -48,9 +48,9 @@ body {
 }
 
 .slider-h2 {
-    font-size: clamp(1.2rem, 6vw, 3rem);
-    color: #386cb0;
-    font-family: Josefin sans;
+    font-size: clamp(1.6rem, 8vw, 4rem);
+    color: #faf9f6;
+    font-family: Great Vibes;
 }
 
 .slider-h2.left {

@@ -1,18 +1,33 @@
 
 import ReactDOM from "react-dom/client";
-import "./home.css";
+import "./contact.css";
+
 import "./template.css";
 import {Header} from "./header.js";
 import {Footer} from "./footer.js";
 
 function Main() {
+    const whiteHighlight = {
+        backgroundColor: "#faf9f6",
+        padding: "0 1ch",
+    }
     return <div className="background">
         <Header />
         <div className="slider home">
-            <div>
-                <div className="slider-h1">
+            <div className="slider-h1">
+                <span style={whiteHighlight}>
                     Contact
-                </div>
+                </span>
+            </div>
+            <div className="slider-h2">
+                <span style={whiteHighlight}>
+                    Email for inquiries and scheduling:
+                </span>
+            </div>
+            <div className="slider-h2">
+                <span style={whiteHighlight}>
+                    peaccollaborationllc@gmail.com
+                </span>
             </div>
         </div>
         <Footer />
