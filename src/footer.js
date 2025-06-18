@@ -33,11 +33,9 @@ function FooterMenu() {
 function FooterMedium() {
     return <div className="footer">
         <div className="footer-logo">
-            <div style={{display: "flex", alignItems: "center"}}>
+            <a href={"/"}><div style={{display: "flex", alignItems: "center"}}>
                 <img src="/logo.png" className="logo-img" />
-                <div>
-                </div>
-            </div>
+            </div></a>
             <div className="socials-row">
                 <p className="footer-info">Phone: 248-781-0432</p>
             </div>
@@ -56,9 +54,9 @@ function FooterWide() {
     return <div className="footer">
         <div className="footer-logo">
             <div style={{display: "flex"}}>
-                <img src="/logo.png" className="logo-img" />
+                <a href={"/"}><img src="/logo.png" className="logo-img" /></a>
                 <div>
-                    <div style={{
+                    <a href={"/"}><div style={{
                         height: "clamp(2rem, 16vw, 7rem)", 
                         display: "flex",
                         flexDirection: "column",
@@ -70,7 +68,7 @@ function FooterWide() {
                         <div className="logo-subtitle" style={{color: "#faf9f6"}}>
                             Therapy and Consulting Services
                         </div>
-                    </div>
+                    </div></a>
                     <div className="socials-row">
                         <p className="footer-info">Phone: 248-781-0432</p>
                     </div>

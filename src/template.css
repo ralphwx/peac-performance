@@ -57,6 +57,9 @@ li > p {
     margin: 0.5em 0;
 }
 
+a {
+    text-decoration: none;
+}
 .section-content {
     padding-top: 1.5rem;
     padding-bottom: 3rem;
@@ -100,3 +103,4 @@ li > p {
     background-color: #c6dbef;
     padding: min(10%, 3rem);
 }
+

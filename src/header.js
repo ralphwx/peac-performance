@@ -7,7 +7,7 @@ import "./header.css";
 //Header for wide screen
 function HeaderWide() {
     return <div className="header">
-        <div className="header-logo">
+        <a href={"/"}><div className="header-logo">
             <img src="/logo.png" className="logo-img" />
             <div>
                 <div className="logo-title">PEAC Collaboration</div>
@@ -15,7 +15,7 @@ function HeaderWide() {
                     Therapy and Consulting Services
                 </div>
             </div>
-        </div>
+        </div></a>
         <div className="header-menu">
             <div className="header-menuitem" onClick={() => {
                 window.location.replace(DOMAIN);
@@ -87,7 +87,7 @@ function ExpandableMenu({items}) {
 //Header for medium-sized screen
 function HeaderMedium() {
     return <div className="header">
-        <div className="header-logo">
+        <a href={"/"}><div className="header-logo">
             <img src="/logo.png" className="logo-img" />
             <div>
                 <div className="logo-title">PEAC Collaboration</div>
@@ -95,7 +95,7 @@ function HeaderMedium() {
                     Therapy and Consulting Services
                 </div>
             </div>
-        </div>
+        </div></a>
         <div style={{flex: 1}}>
             <ExpandableMenu items={<div className="menu-fullscreen">
                 <div></div>
@@ -127,9 +127,9 @@ function HeaderMedium() {
 
 function HeaderNarrow() {
     return <div className="header">
-        <div className="header-logo">
+        <div className="header-logo"><a href={"/"}>
             <img src="/logo.png" className="logo-img" />
-        </div>
+        </a></div>
         <div style={{flex: 1}}>
             <ExpandableMenu items={<div className="menu-fullscreen">
                 <div></div>
