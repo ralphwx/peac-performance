@@ -58,7 +58,7 @@ function Main() {
                 to accommodate professional demands. 
             </p>
             <p>
-                Cost: $50 per hour
+                Cost: $55 per hour
             </p>
         </div>
         <Footer />
