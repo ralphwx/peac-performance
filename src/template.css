@@ -53,6 +53,10 @@ p {
     color: #083584;
 }
 
+.sub-p {
+    font-size: clamp(0.9rem, 1.8vw, 1.13rem);
+}
+
 li > p {
     margin: 0.5em 0;
 }

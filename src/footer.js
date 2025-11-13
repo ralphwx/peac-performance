@@ -3,6 +3,7 @@ import "./footer.css";
 import instagramImgSrc from "./img/instagram.png";
 import {DOMAIN} from "./config.js";
 import {useState, useEffect} from "react";
+import {EMAIL, PHONE} from "./info.js";
 
 function FooterMenu() {
     return <div className="footer-menu">
@@ -37,11 +38,11 @@ function FooterMedium() {
                 <img src="/logo.png" className="logo-img" />
             </div></a>
             <div className="socials-row">
-                <p className="footer-info">Phone: 248-781-0432</p>
+                <p className="footer-info">Phone: {PHONE}</p>
             </div>
             <div className="socials-row">
                 <p className="footer-info">
-		    Email: peaccollaborationllc@gmail.com
+		    Email: {EMAIL}
                 </p>
             </div>
         </div>
@@ -66,15 +67,15 @@ function FooterWide() {
                             PEAC Collaboration
                         </div>
                         <div className="logo-subtitle" style={{color: "#faf9f6"}}>
-                            Therapy and Consulting Services
+                            Therapy, Supervision, and Consulting Services
                         </div>
                     </div></a>
                     <div className="socials-row">
-                        <p className="footer-info">Phone: 248-781-0432</p>
+                        <p className="footer-info">Phone: {PHONE}</p>
                     </div>
                     <div className="socials-row">
                         <p className="footer-info">
-		            Email: peaccollaborationllc@gmail.com
+		            Email: {EMAIL}
 	                </p>
                     </div>
                 </div>

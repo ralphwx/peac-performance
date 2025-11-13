@@ -12,7 +12,7 @@ function HeaderWide() {
             <div>
                 <div className="logo-title">PEAC Collaboration</div>
                 <div className="logo-subtitle">
-                    Therapy and Consulting Services
+                    Therapy, Supervision, and Consulting Services
                 </div>
             </div>
         </div></a>
@@ -92,7 +92,7 @@ function HeaderMedium() {
             <div>
                 <div className="logo-title">PEAC Collaboration</div>
                 <div className="logo-subtitle">
-                    Therapy and Consulting Services
+                    Therapy, Supervision, and Consulting Services
                 </div>
             </div>
         </div></a>

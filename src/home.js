@@ -101,7 +101,7 @@ function Main() {
         <div className="section slider home">
             <div style={{flex: 1}}></div>
             <div className="slider-h2 left" style={{flex: 2}}>
-                Your Pathway to Empowerment and Connection
+                Pathway to Empowerment and Connection
             </div>
         </div>
         <div className="section section-content">
