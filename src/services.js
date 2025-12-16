@@ -40,7 +40,7 @@ function Main() {
             </p>
             <p className="sub-p">
                 Cost: $175 per session. I accept insurance (Aetna, Blue Cross 
-	        Blue Shield, and Blue Cross Network) and self-pay.
+	        Blue Shield, and Blue Cross Network) and self-pay. Please inquire for self-pay rates.
             </p>
         </div>
         <div className="section section-content" style={paddingStyle}>
@@ -48,7 +48,7 @@ function Main() {
                 Family Therapy
             </div>
             <p>
-		I work with families (age 14+) dealing with conflict,
+		I work with families (age 18+) dealing with conflict,
 		parent-child relationship challenges, and challenging life 
         	transitions. I have a particular focus on strengthening 
 	        relationships between parents and young adult children. 
@@ -61,7 +61,7 @@ function Main() {
             </p>
             <p className="sub-p">
                 Cost: $175 per session. I accept insurance (Aetna, Blue Cross 
-		Blue Shield, and Blue Cross Network) and self-pay.
+		Blue Shield, and Blue Cross Network) and self-pay. Please inquire for self-pay rates.
             </p>
         </div>
         <div className="section section-content" style={paddingStyle}>
@@ -82,7 +82,7 @@ function Main() {
             </p>
             <p className="sub-p">
                 Cost: $175 per session. I accept insurance (Aetna, Blue Cross 
-		Blue Shield, and Blue Cross Network) and self-pay.
+		Blue Shield, and Blue Cross Network) and self-pay. Please inquire for self-pay rates
             </p>
         </div>
         <div className="section section-content" style={paddingStyle}>
