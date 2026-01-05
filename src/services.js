@@ -40,7 +40,7 @@ function Main() {
             </p>
             <p className="sub-p">
                 Cost: $175 per session. I accept insurance (Aetna, Blue Cross 
-	        Blue Shield, and Blue Cross Network) and self-pay. Please inquire for self-pay rates.
+	        Blue Shield, and Blue Care Network) and self-pay. Please inquire for self-pay rates.
             </p>
         </div>
         <div className="section section-content" style={paddingStyle}>
@@ -61,7 +61,7 @@ function Main() {
             </p>
             <p className="sub-p">
                 Cost: $175 per session. I accept insurance (Aetna, Blue Cross 
-		Blue Shield, and Blue Cross Network) and self-pay. Please inquire for self-pay rates.
+		Blue Shield, and Blue Care Network) and self-pay. Please inquire for self-pay rates.
             </p>
         </div>
         <div className="section section-content" style={paddingStyle}>
@@ -82,7 +82,7 @@ function Main() {
             </p>
             <p className="sub-p">
                 Cost: $175 per session. I accept insurance (Aetna, Blue Cross 
-		Blue Shield, and Blue Cross Network) and self-pay. Please inquire for self-pay rates
+		Blue Shield, and Blue Care Network) and self-pay. Please inquire for self-pay rates
             </p>
         </div>
         <div className="section section-content" style={paddingStyle}>
