@@ -1,6 +1,6 @@
 
 import "./footer.css";
-import instagramImgSrc from "./img/instagram.png";
+//import instagramImgSrc from "./img/instagram.png";
 import {DOMAIN} from "./config.js";
 import {useState, useEffect} from "react";
 import {EMAIL, PHONE} from "./info.js";

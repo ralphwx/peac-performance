@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3a3ac14.css",
-    "main.js": "/static/js/main.3b8a4370.js",
-    "static/media/room.png": "/static/media/room.e70a92b36ac5abca5266.png",
-    "static/media/roomCropped.png": "/static/media/roomCropped.9cca2b83f9051644b1d1.png",
+    "main.css": "/static/css/main.4b50bf90.css",
+    "main.js": "/static/js/main.f58a194d.js",
+    "static/media/newRoom.JPEG": "/static/media/newRoom.e13af179fb70f997c493.JPEG",
+    "static/media/newRoomCropped.JPEG": "/static/media/newRoomCropped.6fd8e0c47275dc78f1f7.JPEG",
     "static/media/GreatVibes.ttf": "/static/media/GreatVibes.f51f1a4f2cd0c9611249.ttf",
     "static/media/josefin-sans.ttf": "/static/media/josefin-sans.c464ea79c32a55349581.ttf",
-    "static/media/instagram.png": "/static/media/instagram.8ef86159e659165496f1.png",
     "index.html": "/index.html",
-    "main.e3a3ac14.css.map": "/static/css/main.e3a3ac14.css.map",
-    "main.3b8a4370.js.map": "/static/js/main.3b8a4370.js.map"
+    "main.4b50bf90.css.map": "/static/css/main.4b50bf90.css.map",
+    "main.f58a194d.js.map": "/static/js/main.f58a194d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3a3ac14.css",
-    "static/js/main.3b8a4370.js"
+    "static/css/main.4b50bf90.css",
+    "static/js/main.f58a194d.js"
   ]
 }

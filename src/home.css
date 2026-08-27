@@ -18,12 +18,12 @@ body {
 }
 
 .slider.home {
-    background-image: url("../public/room.png");
+    background-image: url("../public/newRoom.JPEG");
 }
 
 @media(max-width: 1000px) {
     .slider.home {
-        background-image: url("../public/roomCropped.png");
+        background-image: url("../public/newRoomCropped.JPEG");
     }
 }
 

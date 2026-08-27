@@ -38,7 +38,7 @@ function Main() {
 	    </div>
 	    <div className="slider-h2">
 		<span style={whiteHighlight}>
-		    6035 Executive Drive, Suite 204
+		    6035 Executive Drive, Suite 210
 		</span>
 	    </div>
 	    <div className="slider-h2">
